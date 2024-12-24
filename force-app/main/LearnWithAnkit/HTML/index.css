@@ -1,0 +1,23 @@
+body{
+    margin: 20px;
+    font-size: large;}
+h1{
+    color: indigo;
+    text-align: center;
+}
+div{
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+#id1{
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    color: red;
+    font-size: x-large;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;}
+p{
+    color: blue;}

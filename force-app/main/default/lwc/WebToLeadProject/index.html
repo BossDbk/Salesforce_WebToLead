@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web To Lead</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <form 
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5i000000KGTV" 
+        method="POST" 
+        onsubmit="beforesubmit()">
+        <h1>Create Lead</h1>
+        <input type=hidden name="oid" value="00D5i000000KGTV">
+        <input type=hidden name="retURL" value="">
+        <input type=hidden name="Lead_Date__c" class="outputleaddate">
+        
+        <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>
+        
+        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/><br>
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
+        
+        <label for="LeadDate">Lead Date:</label><input id="ldate" type="date" required="true" class="inputleaddate"><br>
+        
+        <input type="submit" name="submit" class="csubmit">
+    
+    </form>
+</body>
+</html>
+
+
+    
+
+    
