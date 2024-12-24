@@ -25,3 +25,7 @@ function timestamp()
     } 
 } 
 setInterval(timestamp, 500);
+
+function captchaVerifiedFun(){
+    captchaVerified = true;
+}
