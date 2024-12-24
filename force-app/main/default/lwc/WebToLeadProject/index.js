@@ -1,11 +1,17 @@
-function beforesubmit(){
-    debugger;
-    let outputdate = document.querySelector(".outputleaddate");
-    let inputdate = document.querySelector(".inputleaddate");
+let captchaVerified = false;
 
-    console.log("inputdate.value",inputdate.value);
-    outputdate.value = new Date(inputdate.value).toLocaleDateString("en-US");
-    console.log("outputdate.value",outputdate.value);
+function beforesubmit(event){
+    if(captchaVerified){
+        let outputdate = document.querySelector(".outputleaddate");
+        let inputdate = document.querySelector(".inputleaddate");
+    
+        console.log("inputdate.value",inputdate.value);
+        outputdate.value = new Date(inputdate.value).toLocaleDateString("en-US");
+        console.log("outputdate.value",outputdate.value);
+    }else{
+        alert("reCapture the Captcha Properly")
+        event.preventDefault();
+    }
 }
 
 
