@@ -1,7 +1,6 @@
 let captchaVerified = false;
 
 function beforesubmit(event){
-    debugger;
 //    if(captchaVerified){
         let outputdate = document.querySelector(".outputleaddate");
         let inputdate = document.querySelector(".inputleaddate");
@@ -16,15 +15,15 @@ function beforesubmit(event){
 }
 
 
-function timestamp() 
-{ var response = document.getElementById("g-recaptcha-response"); 
-    if (response == null || response.value.trim() == "") 
-        {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-            elems["ts"] = JSON.stringify(new Date().getTime());
-            document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
+function timestamp() { 
+    var response = document.getElementById("g-recaptcha-response"); 
+    if (response == null || response.value.trim() == "") {
+    var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+    elems["ts"] = JSON.stringify(new Date().getTime());
+    document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
     } 
 } 
-setInterval(timestamp, 500);
+setInterval(timestamp, 500); 
 
 function captchaVerifiedFun(){
     captchaVerified = true;
